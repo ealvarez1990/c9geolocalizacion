@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geolocalizacion</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div id="cuadro_busquedad">
+                (EN OBRAS)
+                <h3>Cuadro de busqueda</h3>
+                <label for="origen">Origen</label>
+                <input type="type" name="origen" id="origen"  placeholder="calle, ciudad, estado..." />
+                <br />
+                <label for="destino">Destino</label>
+                <input type="text" name="destino" id="destino" placeholder="calle, ciudad, estado..." />
+                <br>
+                <input type="button" id="buscar" value="Buscar ruta" />
+            </div>
+            <div id="ruta">
+                <h3>Opciones</h3>
+                <select id="modo_viaje" class="opciones_ruta">
+                    <option value="DRIVING" selected="selected">Coche</option>
+                    <option value="BICYCLING">Bici</option>
+                    <option value="WALKING">A pie</option>
+                    <option value="TRANSIT">Transporte publico</option>
+                </select>
+                <select id="tipo_sistema" class="opciones_ruta">
+                    <option value="METRIC" selected="selected">Métrico</option>
+                    <option value="IMPERIAL">Imperial</option>
+                </select>
+            </div>
+        </header>
+
+        <section>
+            <div id="map_canvas"></div>
+        </section>
+        <aside>
+            <div id="panel_ruta"></div>
+        </aside>
+    </div>
+    <footer>
+        <div id="pie">GOOGLE API- Ealvarez</div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC722PuQhvrQjsRUMgITtjwtmhZQ7XIJmQ&libraries=places"></script>
+    <script src="js/jquery.js"></script>
+    <!-- css3-mediaqueries.js for IE less than 9 -->
+<!-- [if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <!--script src="js/gmaps.js"></script-->
+    <script src="js/codigo.js"></script>
+</body>
+
+</html>
+

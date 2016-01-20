@@ -1,0 +1,18 @@
+#mapa{
+    width:60%;
+    height:550px;
+    margin:0 auto;
+}
+
+body{
+    width:100%;
+    margin:0;
+}
+
+#situacion{
+    margin-left:20%;
+    margin-top:2%;
+}
+#distancia{
+     margin-left:20%;
+}
